@@ -1,0 +1,268 @@
+<?php
+	session_start();
+	require_once('dbconfig/config.php');
+	//phpinfo();
+?>
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<html>
+<head>
+<title>Home Page</title>
+<link rel="stylesheet" href="css/style.css">
+<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My Portfolio</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+</head>
+<body>
+<div id="mobile-menu-open" class="shadow-large">
+        <i class="fa fa-bars" aria-hidden="true"></i>
+    </div>
+    <!-- End #mobile-menu-toggle -->
+    <header>
+        <div id="mobile-menu-close">
+            <span>Close</span> <i class="fa fa-times" aria-hidden="true"></i>
+        </div>
+        <ul id="menu" class="shadow">
+            <li>
+                <a href="#about">About</a>
+            </li>
+            <li>
+                <a href="#experience">Experience</a>
+            </li>
+            <li>
+                <a href="#education">Education</a>
+            </li>
+            <li>
+                <a href="#projects">Projects</a>
+            </li>
+            <li>
+                <a href="#skills">Skills</a>
+            </li>
+            <li>
+                <a href="#contact">Contact</a>
+            </li>
+        </ul>
+    </header>
+    <!-- End header -->
+
+    <div id="lead">
+        <div id="lead-content">
+            <h1>....Name...</h1>
+            <h2>Software Engineer</h2>
+            <a href="#" class="btn-rounded-white">Download Resume</a>
+        </div>
+        <!-- End #lead-content -->
+
+        <div id="lead-overlay"></div>
+
+        <div id="lead-down">
+            <span>
+                <i class="fa fa-chevron-down" aria-hidden="true"></i>
+            </span>
+        </div>
+        <!-- End #lead-down -->
+    </div>
+    <!-- End #lead -->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h2 class="heading">About Me</h2>
+                </div>
+                <div class="col-md-8">
+                    <p>
+                        While maintaining the standards and simplicity of a software implementation to solve the current and upcoming human needs, I always want to be up-to-date in learning using latest technologies and best practices in the software development.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End #about -->
+
+    <div id="experience" class="background-alt">
+        <h2 class="heading">Experience</h2>
+        <div id="experience-timeline">
+            <div data-date="July 2018 – Present">
+                <h3>Analytics India Magazine </h3>
+                <h4>Campus Ambassador</h4>
+                <p>
+                    We are striving to build an Analytics and AI ecosystem like none other. Analytics India Magazine is trying to bridge the gap between the various elements of the Indian Analytics industry. From being India's leading online platform chronicling advances
+                    in Analytics, Big Data, Artificial Intelligence and Data Science to hosting India's Biggest Analytics Conferences "Cypher"​ and "​ The Machine Conference"
+                </p>
+            </div>
+
+
+
+            <div data-date="September 2015 – September 2016">
+                <h3>Institution of Engineers India</h3>
+                <h4>Joint Secretary(IEI MGR Chapter)</h4>
+                <p>
+                    The Institution of Engineers (India) [IEI] is a statutory body to promote and advance the engineering and technology, established in 1920 and incorporated by Royal Charter in 1935. It is the largest multi-disciplinary professional body of engineers encompassing
+                    15 (fifteen) engineering disciplines with a membership of more than 820 thousand, and serving the nation for more than 9 decades. The IEI has its headquarters located in Kolkata with national presence through more than hundred Centres
+                    and several Overseas Chapters The IEI MGR chapter will comes under one of it's hundred centres,i.e Tiruvallur local centre(IEI TVLC) and this chapter is center for all other chapters in this local centre . Under this we used to conduct
+                    monthly meetups and workshops in different disciplines.Through this students also used attend some of the national conferences that happened in and around chennai area
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- End #experience -->
+
+    <div id="education">
+        <h2 class="heading">Education</h2>
+        <div class="education-block">
+            <h3>Dr MGR University</h3>
+            <span class="education-date">Sept 2016 - May 2020</span>
+            <h4>Bachelor of Science in Computer Science</h4>
+            <p>
+                Currently in 3rd year of B.tech CSE
+            </p>
+        </div>
+        <!-- End .education-block -->
+
+        <div class="education-block">
+            <h3>Sri chaithanya </h3>
+            <span class="education-date">Sept 2016 - Sept 2017</span>
+            <h4>Board of Intermediate education</h4>
+            <ul>
+                <li>
+                    First year - 448
+                </li>
+                <li>
+                    Second year - 448
+                </li>
+            </ul>
+        </div>
+        <!-- End .education-block -->
+    </div>
+    <!-- End #education -->
+
+    <div id="projects" class="background-alt">
+        <h2 class="heading">Projects</h2>
+        <div class="container">
+            <div class="row">
+                <div class="project shadow-large">
+                    <div class="project-image">
+                        <img src="images/project.jpg" />
+                    </div>
+                    <!-- End .project-image -->
+                    <div class="project-info">
+                        <h3>Project Name Here</h3>
+                        <p>
+                            Project explanation here
+                        </p>
+                        <a href="#">View Project</a>
+                    </div>
+                    <!-- End .project-info -->
+                </div>
+                <!-- End .project -->
+
+                <div class="project shadow-large">
+                    <div class="project-image">
+                        <img src="images/project.jpg" />
+                    </div>
+                    <!-- End .project-image -->
+                    <div class="project-info">
+                        <h3>Project Name Here</h3>
+                        <p>
+                            Project explanation here..
+                        </p>
+                        <a href="#">View Project</a>
+                    </div>
+                    <!-- End .project-info -->
+                </div>
+                <!-- End .project -->
+            </div>
+        </div>
+    </div>
+    <!-- End #projects -->
+
+    <div id="skills">
+        <h2 class="heading">Skills</h2>
+        <ul>
+            <li>JavaScript</li>
+            <li>Python</li>
+            <li>Java</li>
+            <li>C</li>
+            <li>C++</li>
+            <li>Html5</li>
+            <li>CSS</li>
+            <li>Machine Learning</li>
+        </ul>
+    </div>
+    <!-- End #skills -->
+
+    <div id="contact">
+        <h2>Get in Touch</h2>
+        <div id="contact-form">
+            <form method="POST" action="https://formspree.io/email@email.com">
+                <input type="hidden" name="_subject" value="Contact request from personal website" />
+                <input type="email" name="_replyto" placeholder="Your email" required>
+                <textarea name="message" placeholder="Your message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+        <!-- End #contact-form -->
+    </div>
+    <!-- End #contact -->
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-5 copyright">
+                    <p>
+                        Copyright &copy; 2017 YOUR NAME
+                    </p>
+                </div>
+                <div class="col-sm-2 top">
+                    <span id="to-top">
+                        <i class="fa fa-chevron-up" aria-hidden="true"></i>
+                    </span>
+                </div>
+                <div class="col-sm-5 social">
+                    <ul>
+                        <li>
+                            <a href="https://github.com/" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://stackoverflow.com/" target="_blank"><i class="fa fa-stack-overflow" aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://linkedin.com/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://plus.google.com/" target="_blank"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End footer -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/scripts.min.js"></script>
+	<div id="main-wrapper">
+		<center><h3>Kindly log out from here <?php echo $_SESSION['username']; ?></h3></center>
+		
+		<form action="index.php" method="post">
+			<div class="inner_container">
+				<button class="logout_button" type="submit">Log Out</button>	
+			</div>
+		</form>
+	</div>
+</body>
+</html>
